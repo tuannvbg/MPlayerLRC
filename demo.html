@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>music player</title>
+        <link rel="stylesheet" href="css/player.css">
+    </head>
+    <body onselectstart= "return false">
+        <div class="audio-player">
+            <audio src="mp3/徐佳莹 - 寻人启事.mp3" id="id-audio-player" data-index="0">徐佳莹 - 寻人启事</audio>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <div class="left fl">
+                    <div class="ltop">
+    					<p class="bj" id="id-bg"><img src="image/1.jpg" alt=""></p>
+                        <div class="pro">
+                            <p class="le" id="cur">00:00</p>
+                            <p class="line" id="line"><i id="point"></i></p>
+                            <p class="ri" id="dur">04:34</p>
+                        </div>
+    				</div>
+
+                    <div class="mid tc">
+        				<p class="name" id="song"></p>
+        				<p class="author" id="singer"></p>
+                        <div class="btn">
+                            <div class="mbtn" id="sound">
+                                <p class="up" id="id-button-first"><i></i></p>
+                                <p class="play" id="play"><i></i></p>
+                                <p class="down" id="id-button-next"><i></i></p>
+                            </div>
+
+                            <div class="botbtn">
+                                <div class="sound fl">
+                                    <p class="rbtn"><i id="muted"></i></p>
+                                    <p class="line" id="sline"><i id="spoint"></i></p>
+                                </div>
+                                <div class="order fr">
+                                    <p class="lbtn">
+                                        <span id="way">顺序播放</span>
+                                    </p>
+                                    <ul class="ul_or" id="hid">
+                                        <li><span class="pi">顺序播放</span></li>
+                                        <li><span class="bl">随机播放</span></li>
+                                        <li><span class="ye">单曲播放</span></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div div class="songlist" id="lists">
+                        <ul>
+                            <!-- <li><p class="song">那些年</p><p class="star">胡夏</p></li>
+                            <li class="on"><p class="song">海阔天空</p><p class="star">Beyond</p></li> -->
+                        </ul>
+                   </div>
+
+                    <div id="id-div-music">
+                        <div class="mulist">
+                            <div class="music" data-path="https://dl.dropboxusercontent.com/s/8ll0330p6v66u6x/Jimmy.Nguyen-Ngoi.Day.Van.Mong.Doi.mp3" data-index="0">Ngồi Đây Vẫn Mong Đợi</div>
+                            <div class="music" data-path="https://dl.dropboxusercontent.com/s/oliutpf0r3jyttl/Jimmy.Nguyen-Co.Quen.mp3" data-index="1">Cố Quên</div>
+                            <div class="music" data-path="mp3/徐佳莹 - 高空弹跳.mp3" data-index="2">徐佳莹 - 高空弹跳</div>
+                            <div class="music" data-path="mp3/徐佳莹 - 极限.mp3" data-index="3">徐佳莹 - 极限</div>
+                            <div class="music" data-path="mp3/徐佳莹 - 失落沙洲.mp3" data-index="4">徐佳莹 - 失落沙洲</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right fl">
+                    <div class="songw">
+                        <div class="song" id="show">
+                            <!-- <p>海阔天空</p>
+                            <p>作词：黄家驹  作曲：黄家驹</p>
+                            <p>演唱：Beyond</p>
+                            <p>今天我 寒夜里看雪飘过</p>
+                            <p>怀着冷却了的心窝漂远方</p>
+                            <p>风雨里追赶 雾里分不清影踪</p>
+                            <p>天空海阔你与我 可会变 (谁没在变)</p>
+                            <p>多少次 迎着冷眼与嘲笑</p>
+                            <p>从没有放弃过心中的理想</p>
+                            <p>一刹那恍惚 若有所失的感觉</p>
+                            <p>不知不觉已变淡 心里爱 (谁明白我)</p> -->
+                        </div>
+                        <div class="top"></div>
+                        <div class="bot"></div>
+                    </div>
+                    <div class="lrc">
+                        <audio id="aud" autoplay></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="player.js"></script>
+    </body>
+</html>
